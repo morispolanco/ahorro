@@ -95,4 +95,12 @@ if prompt := st.chat_input():
 # Mostrar el ahorro total calculado
 if st.button("Calcular ahorro total"):
     ahorro_total = sum(consejo.get("ahorro_estimado", 0) for consejo in consejos)
-    st.info(f"Ahorro total estim
+        st.info(f"Ahorro total estimado en esta categoría: ${ahorro_total}")
+
+# Calcular el ahorro total en todas las categorías
+ahorro_total_total = sum(sum(consejo.get("ahorro_estimado", 0) for consejo in consejos) for consejos in elementos_y_ahorros.values())
+
+# Mostrar el ahorro total en todas las categorías
+if st.button("Calcular ahorro total en todas las categorías"):
+    st.info(f"Ahorro total estimado en todas las categorías: ${ahorro_total_total}")
+
