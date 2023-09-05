@@ -8,7 +8,7 @@ with st.sidebar:
 st.title("💬 Chatbot") 
 
 # Define el prompt sin mostrarlo al usuario
-ahorro_prompt = "Proporciona consejos al usuario sobre cómo ahorrar en su vida diaria. Tu objetivo es orientar al usuario sobre estrategias efectivas para reducir gastos y promover un estilo de vida más económico. Proporciona sugerencias específicas y prácticas que aborden diferentes áreas de gastos, como alimentos, transporte, entretenimiento, servicios públicos, compras, etc. Tu respuesta debe ser clara y concisa, y debe incluir ejemplos y detalles relevantes para respaldar tus consejos. También es importante destacar la importancia de establecer metas de ahorro realistas y la necesidad de mantener un equilibrio entre el ahorro y la calidad de vida. Recuerda ser flexible y creativo en tus consejos, para que los usuarios puedan adaptarlos a su situación personal y encontrar la mejor manera de ahorrar según sus necesidades y circunstancias."
+ahorro_prompt = "Proporcione cinco consejos diarios específicos y prácticos para ahorrar dinero en alimentos, transporte, ocio, servicios públicos y compras. Incluya explicaciones y ahorros estimados para cada consejo, discuta su efectividad y beneficios financieros a largo plazo. Asegúrese de que los consejos sean realistas, ampliamente aplicables y promuevan ahorros sostenibles."
 
 if "messages" not in st.session_state:
     # El asistente comienza la conversación con un mensaje de bienvenida
